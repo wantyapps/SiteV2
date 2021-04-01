@@ -2,11 +2,16 @@ import React from "react";
 
 function App() {
   return (
-    <Navbar>
-      <NavbarItem href="#" text="Home"/>
-      <NavbarItem href="#" text="About"/>
-      <NavbarItem href="#" text="Links"/>
-    </Navbar>
+    <div>
+      <Navbar>
+        <NavbarItem href="#" text="Home"/>
+        <NavbarItem href="#" text="About"/>
+        <NavbarItem href="#" text="Links"/>
+      </Navbar>
+      <center>
+        <h1>I build software.</h1>
+      </center>
+    </div>
   );
 }
 
@@ -23,14 +28,6 @@ function NavbarItem(props) {
     <li className="navbar-item">
       <a href={ props.href } className="navbar-button">{ props.text }</a>
     </li>
-  );
-}
-
-function MainHTML() {
-  return (
-    <head>
-      <link rel="stylesheet" href="app.css"/>
-    </head>
   );
 }
 
