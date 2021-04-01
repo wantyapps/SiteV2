@@ -1,3 +1,5 @@
+import React from "react";
+
 function App() {
   return (
     <Navbar>
@@ -5,12 +7,6 @@ function App() {
       <NavbarItem href="#" text="About"/>
       <NavbarItem href="#" text="Links"/>
     </Navbar>
-  );
-  
-  return (
-    <head>
-      <link rel="stylesheet" href="app.css"/>
-    </head>
   );
 }
 
@@ -29,4 +25,13 @@ function NavbarItem(props) {
     </li>
   );
 }
+
+function MainHTML() {
+  return (
+    <head>
+      <link rel="stylesheet" href="app.css"/>
+    </head>
+  );
+}
+
 export default App;
