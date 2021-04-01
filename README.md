@@ -5,4 +5,4 @@
 Mission:
 
 - Be user-friendly
-  - Includes a more ('beautiful') NavBar
+  - Includes a more "beautiful" NavBar
