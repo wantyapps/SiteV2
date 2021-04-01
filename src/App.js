@@ -6,6 +6,12 @@ function App() {
       <NavbarItem href="#" text="Links"/>
     </Navbar>
   );
+  
+  return (
+    <head>
+      <link rel="stylesheet" href="app.css"/>
+    </head>
+  );
 }
 
 function Navbar(props) {
