@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom"
+import MainHTML from "./MainHTML"
 
 function App() {
   return (
@@ -12,9 +13,7 @@ function App() {
         <NavbarItem href="#" text="About"/>
         <NavbarItem href="#" text="Links"/>
       </Navbar>
-      <center>
-        <h1>I build software.</h1>
-      </center>
+      <MainHTML/>
     </div>
   );
 }
