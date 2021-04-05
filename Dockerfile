@@ -1,4 +1,4 @@
-FROM node:14-buster-slim
+FROM node:latest
 
 EXPOSE 80
 WORKDIR /
