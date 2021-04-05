@@ -18,9 +18,9 @@ function App() {
           <Route exact path="/links" component={LinksPage}/>
         </Switch>
       </BrowserRouter>
-      <section className="section-bottom">
-        <a href="/home">hi</a>
-      </section>
+      <footer className="footer">
+        <p>Created by Uri Arev (2021). Copyright (©) Uri Arev 2021</p>
+      </footer>
     </div>
   );
 }
