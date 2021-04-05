@@ -1,42 +1,27 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom"
-import MainHTML from "./MainHTML"
+import { BrowserRouter, Switch, Redirect, Route } from "react-router-dom"
+import { HomePage, AboutPage, LinksPage, Navbar, NavbarItem } from "./Components"
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Route path="/about" component={AboutPage} />
-      </BrowserRouter>
       <Navbar>
-        <NavbarItem href="#" text="Home"/>
-        <NavbarItem href="#" text="About"/>
-        <NavbarItem href="#" text="Links"/>
+        <NavbarItem href="/home" text="Home"/>
+        <NavbarItem href="/about" text="About"/>
+        <NavbarItem href="/links" text="Links"/>
       </Navbar>
-      <MainHTML/>
+      <BrowserRouter>
+        <Switch>
+          <Redirect exact from="/" to="/home"/>
+          <Route exact path="/home" component={HomePage}/>
+          <Route exact path="/about" component={AboutPage}/>
+          <Route exact path="/links" component={LinksPage}/>
+        </Switch>
+      </BrowserRouter>
+      <section className="section-bottom">
+        <a href="/home">hi</a>
+      </section>
     </div>
-  );
-}
-
-function Navbar(props) {
-  return (
-    <nav className="navbar">
-      <ul className="navbar-ul">{ props.children }</ul>
-    </nav>
-  );
-}
-
-function NavbarItem(props) {
-  return (
-    <li className="navbar-item">
-      <a href={ props.href } className="navbar-button">{ props.text }</a>
-    </li>
-  );
-}
-
-function AboutPage() {
-  return (
-    <h1>yo</h1>
   );
 }
 

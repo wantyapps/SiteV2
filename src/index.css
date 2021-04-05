@@ -26,6 +26,8 @@ code {
   height: var(--nav-size);
   padding: 0 1rem;
   border-bottom: var(--border);
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-ul {
@@ -67,4 +69,11 @@ a {
 
 .navbar-button:hover {
   filter: brightness(1.5)
+}
+
+.section-bottom {
+  display: flex;
+  height: 100px;
+  background-color: red;
+  position: relative;
 }
