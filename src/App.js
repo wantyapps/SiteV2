@@ -9,6 +9,7 @@ function App() {
         <NavbarItem href="/home" text="Home"/>
         <NavbarItem href="/about" text="About"/>
         <NavbarItem href="/links" text="Links"/>
+        <NavbarItem href="/api/v1/doc" text="Developer"/>
       </Navbar>
       <BrowserRouter>
         <Switch>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="doc.css">
+    <title>API Documentation | Wantyapps</title>
+</head>
+<body>
+    <center>
+        <h1>The Wantyapps API Documentation</h1>
+    </center>
+    <h2>Basics</h2>
+    To log in to the API, add the following headers to the requests:<br/>
+    <br/>
+    <code>username: wantyapps</code><br/>
+    <code>password: password</code><br/>
+    <br/>
+    If you did not use the correct values, then the api request will response with the JSON object below:<br/>
+    <br/>
+    <pre>
+        <code class="multicode">
+{
+    "success": false,
+    "error": "Username or password incorrect"
+}
+        </code>
+    </pre>
+    (This error will show up even if you didn't specify any headers.)<br/>
+    If you did use the correct <code>username</code> and <code>password</code> headers, you will see this:<br/>
+    <pre>
+        <code class="multicode">
+{
+    "success": true,
+    "error": false
+}
+        </code>
+    </pre>
+    (Notice that when there are no errors, <code>error</code> will be <code>false</code>.)<br/>
+</body>
+</html>
