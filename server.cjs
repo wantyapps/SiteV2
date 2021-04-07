@@ -3,8 +3,8 @@ const path = require('path');
 const app = express();
 const RateLimit = require('express-rate-limit');
 const limiter = new RateLimit({
-  windowMs: 1*60*1000,
-  max: 5
+  windowMs: 15*60*1000,
+  max: 500
 });
 
 app.use(limiter)
