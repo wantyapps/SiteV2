@@ -10,6 +10,8 @@ const limiter = new RateLimit({
 app.use(limiter)
 app.use(express.static(path.join(__dirname, 'build')));
 
+// TODO: Make a more secure way of logging in to the API
+
 app.get('/api/v1', (req, res) => {
     if ( req.headers.username == "wantyapps", req.headers.password == "password") {
         res.send({
