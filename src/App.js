@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Redirect, Route } from "react-router-dom"
-import { HomePage, AboutPage, LinksPage, Navbar, NavbarItem } from "./Components.js"
+import { HomePage, AboutPage, LinksPage, PageNotFound, Navbar, NavbarItem } from "./Components.js"
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
           <Route exact path="/home" component={HomePage}/>
           <Route exact path="/about" component={AboutPage}/>
           <Route exact path="/links" component={LinksPage}/>
+          <Route path="*" component={PageNotFound}/>
         </Switch>
       </BrowserRouter>
       <footer className="footer">

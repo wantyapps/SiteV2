@@ -22,6 +22,14 @@ export function LinksPage() {
     )
 }
 
+export function PageNotFound() {
+    return (
+        <center>
+            <h1>Ouch...</h1>
+        </center>
+    )
+}
+
 export function Navbar(props) {
     return (
         <nav className="navbar">
