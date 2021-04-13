@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Redirect, Route } from "react-router-dom"
-import { HomePage, AboutPage, LinksPage, PageNotFound, Navbar, NavbarItem, Footer } from "./Components.js"
+import { HomePage, AboutPage, LinksPage, PageNotFound, Footer } from "./Components.js"
 
 function App() {
   return (
