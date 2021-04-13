@@ -14,12 +14,12 @@ test('Test HomePage', () => {
 
 test('Test AboutPage', () => {
     render(<AboutPage/>);
-    const headerElement = screen.getByText('About');
+    const headerElement = screen.getByText('About Me');
     expect(headerElement).toBeInTheDocument();
 });
 
 test('Test LinksPage', () => {
     render(<LinksPage/>);
-    const headerElement = screen.getByText('Links');
+    const headerElement = screen.getByText('Web Links');
     expect(headerElement).toBeInTheDocument();
 })

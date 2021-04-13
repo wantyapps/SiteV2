@@ -10,7 +10,7 @@ export function HomePage() {
             <center>
                 <h1>I build software.</h1>
                 <h2>Software?</h2>
-                <ul class="SoftwaresUL">
+                <ul className="SoftwaresUL">
                     <li><a href="https://github.com/wantyapps/SiteV2">This site!</a></li>
                 </ul>
             </center>
@@ -28,7 +28,7 @@ export function AboutPage() {
                 <NavbarItem href="/api/v1/doc" text="Developer"/>
             </Navbar>
             <center>
-                <h1>About</h1>
+                <h1>About Me</h1>
                 <p>Hello! My name is Uri Arev (aka. Wantyapps), and I love building software.</p>
                 <p>My mission is to create software that helps developers, and to</p>
                 <p>just make people happy.</p>
@@ -48,8 +48,8 @@ export function LinksPage() {
                 <NavbarItem href="/api/v1/doc" text="Developer"/>
             </Navbar>
             <center>
-                <h1>Links</h1>
-                <ul class="LinksUL">
+                <h1>Web Links</h1>
+                <ul className="LinksUL">
                     <li><a href="https://github.com/Official-Wantyapps/">The Official Wantyapps GitHub Organization</a></li>
                     <li><a href="https://github.com/wantyapps/">My GitHub</a></li>
                     <li><a href="https://gitlab.com/wantyapps/">My GitLab</a></li>
