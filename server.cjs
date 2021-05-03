@@ -7,22 +7,35 @@ const limiter = new RateLimit({
   max: 500
 });
 
+ProcessDebug = false;
+
+if ( process.argv[2] == "d" || process.argv[2] == "debug" ) {
+	ProcessDebug = true;
+	console.log("Debug mode enabled.");
+};
+
 app.use(limiter)
 app.use(express.static(path.join(__dirname, 'build')));
 
 // TODO: Make a more secure way of logging in to the API
 
 app.get('/api/v1', (req, res) => {
-    if ( req.headers.username == "wantyapps", req.headers.password == "password") {
+    if ( req.headers.username == "wantyapps" && req.headers.password == "password") {
         res.send({
             "success": true,
             "error": false
         });
+	if ( ProcessDebug == true ) {
+		console.log("API: Success");
+	};
     } else {
         res.send({
             "success": false,
             "error": "Username or password incorrect"
         });
+	if ( ProcessDebug == true ) {
+		console.log("API: Fail");
+	};
     };
 });
 
