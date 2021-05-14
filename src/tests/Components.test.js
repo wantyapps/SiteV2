@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Navbar, HomePage, AboutPage, LinksPage } from './Components.js';
+import { Navbar, HomePage, AboutPage, LinksPage } from '../Components.js';
 
 test('Test Navbar', () => {
     render(<Navbar/>);
