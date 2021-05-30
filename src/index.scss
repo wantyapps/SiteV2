@@ -24,6 +24,12 @@ code {
   --footer-bg: #403B3B;
 }
 
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 15px;
+}
+
 .navbar {
   background-color: var(--nav-bg);
   height: var(--nav-size);
@@ -41,12 +47,6 @@ code {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-a {
-  color: var(--text-color);
-  text-decoration: none;
-  font-size: 15px;
 }
 
 .navbar-item {
@@ -68,10 +68,9 @@ a {
   align-items: center;
   justify-content: center;
   transition: filter 300ms;
-}
-
-.navbar-button:hover {
-  filter: brightness(1.5)
+  &:hover {
+    filter: brightness(1.5);
+  }
 }
 
 .footer {
@@ -79,13 +78,12 @@ a {
   bottom: 0%;
   width: 100%;
   height: 30px;
-  background-color: var(--footer-bg); 
-}
-
-.footer p {
-  font-size: 10px;
-  position: absolute;
-  bottom: 0;
+  background-color: var(--footer-bg);
+  p {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .LinksUL {

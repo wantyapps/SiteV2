@@ -21,18 +21,12 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/api/v1', (req, res) => {
     if ( req.headers.username == "wantyapps" && req.headers.password == "password") {
-        res.send({
-            "success": true,
-            "error": false
-        });
+        res.send({"success": true, "error": false});
 	if ( ProcessDebug == true ) {
 		console.log("API: Success");
 	};
     } else {
-        res.send({
-            "success": false,
-            "error": "Username or password incorrect"
-        });
+        res.send({"success": false, "error": "Username or password incorrect"});
 	if ( ProcessDebug == true ) {
 		console.log("API: Fail");
 	};
