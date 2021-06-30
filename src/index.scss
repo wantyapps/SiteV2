@@ -16,12 +16,12 @@ code {
 }
 
 :root {
-  --bg: #292626;
-  --text-color: #979797;
-  --nav-bg: #353535;
+  --bg: #5F8ABF;
+  --text-color: #E6E6E6;
+  --nav-bg: #045195;
   --navbar-size: 50px;
   --border: 1px solid #353535;
-  --footer-bg: #403B3B;
+  --footer-bg: #045195;
 }
 
 a {
@@ -30,68 +30,7 @@ a {
   font-size: 15px;
 }
 
-.navbar {
-  background-color: var(--nav-bg);
-  height: var(--nav-size);
-  padding: 0 1rem;
-  border-bottom: var(--border);
-  display: flex;
-  justify-content: center;
-}
-
-.navbar-ul {
-  max-width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-item {
-  width: calc(var(--nav-size) * 0.8 );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar-button {
-  --navbar-button-size: calc(var(var(--navbar-size)) * 0.5);
-  width: var(--navbar-button-size);
-  height: var(--navbar-button-size);
-  background-color: #474747;
-  border-radius: 10%;
-  padding: 10px;
-  margin: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: filter 300ms;
-  &:hover {
-    filter: brightness(1.5);
-  }
-}
-
-.footer {
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
-  height: 30px;
-  background-color: var(--footer-bg);
-  p {
-    font-size: 10px;
-    position: absolute;
-    bottom: 0;
-  }
-}
-
 .LinksUL {
   list-style-type: none;
-}
-
-.SoftwareUL {
-  position: absolute;
-  list-style-type: none;
-  left: 45%;
+  padding: 0;
 }

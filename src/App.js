@@ -1,6 +1,10 @@
 import React from "react";
-import { BrowserRouter, Switch, Redirect, Route } from "react-router-dom"
-import { HomePage, AboutPage, LinksPage, PageNotFound, Footer } from "./Components.js"
+import { BrowserRouter, Switch, Redirect, Route } from "react-router-dom";
+import { HomePage } from "./components/Homepage.js";
+import { AboutPage } from "./components/Aboutpage.js";
+import { LinksPage } from "./components/Linkspage.js";
+import { PageNotFound } from "./components/404.js";
+import { Footer } from "./components/Footer.js"
 
 function App() {
   return (
