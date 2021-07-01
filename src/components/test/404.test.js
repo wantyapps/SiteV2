@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Navbar } from "../navbar.js";
+import { PageNotFound } from "../404.js";
 
 test('Test Navbar', () => {
-    render(<Navbar/>);
+    render(<PageNotFound/>);
 });
