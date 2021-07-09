@@ -13,10 +13,12 @@
     </center>
     <h2>Basics</h2>
     To log in to the API, add the following headers to the requests:<br/>
-    <br/>
-    <code>username: wantyapps</code><br/>
-    <code>password: password</code><br/>
-    <br/>
+    <pre>
+    	<code class="multicode">
+username: wantyapps
+password: password
+	</code>
+    </pre>
     If you did not use the correct values, then the api will respond with the JSON object below:<br/>
     <br/>
     <pre>
@@ -38,5 +40,18 @@
         </code>
     </pre>
     (Notice that when there are no errors, <code>error</code> will be <code>false</code>.)<br/>
+    <h2>Headers</h2>
+    <h3>The Action Header</h3>
+    The action header can be used to specify what you want to do after you have logged in to the API.<br/>
+    For example, if we use <code>joke</code> as the value for this header, the API will send us
+    a random joke. Example request:<br/>
+    <pre>
+    	<code class="multicode">
+username: wantyapps
+password: password
+action: joke
+	</code>
+    </pre>
+    The API will respond with a random joke in the JSON, with a key of <code>joke</code>.<br/>
 </body>
 </html>
