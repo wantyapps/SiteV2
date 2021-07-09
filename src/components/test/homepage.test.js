@@ -4,6 +4,6 @@ import { HomePage } from "../Homepage.js";
 
 test('Test HomePage', () => {
     render(<HomePage/>);
-    const headerElement = screen.getByText('I build software.');
+    const headerElement = screen.getByText('We build software.');
     expect(headerElement).toBeInTheDocument();
 });

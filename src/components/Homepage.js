@@ -11,7 +11,7 @@ export function HomePage() {
 				<NavbarItem href="/api/v1/doc" text="Developer"/>
 			</Navbar>
 			<center>
-				<h1>I build software.</h1>
+				<h1>We build software.</h1>
 				<h2>Software?</h2>
 				<ul className="SoftwareUL">
 					<li><a href="https://github.com/wantyapps/SiteV2">This site!</a></li>
