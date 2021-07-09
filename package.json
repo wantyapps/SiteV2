@@ -28,7 +28,7 @@
     "build": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject",
-    "docker": "docker run -ditp 80:80 site"
+    "docker": "docker build -t site . && docker run -dp 80:80 site"
   },
   "eslintConfig": {
     "extends": [
