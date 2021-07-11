@@ -18,10 +18,10 @@ Mission:
 #### Node
 
 * **Recommended**: Use [nodemon](https://npmjs.com/package/nodemon)
-with `npm run build && nodemon server.cjs`
+with `npm run build && nodemon server.js`
 
 (If you don't have nodemon or don't want to use it: Just use node: `npm 
-run build && node server.cjs`)
+run build && node server.js`)
 
 #### Serve
 
