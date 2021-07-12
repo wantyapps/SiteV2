@@ -13,7 +13,7 @@ const limiter = new RateLimit({
 
 var ProcessDebug = false; // For future implementations
 
-if ( process.argv[2] == "d" || process.argv[2] == "debug" ) {
+if ( process.argv[2] === "d" || process.argv[2] === "debug" ) {
 	ProcessDebug = true;
 	console.log("Debug mode enabled.");
 };
