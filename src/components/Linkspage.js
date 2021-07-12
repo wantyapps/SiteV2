@@ -1,14 +1,14 @@
-import { Navbar, NavbarItem } from "./Navbar.js";
+import { NavBar, NavBarItem } from "./Navbar.js";
 
 export function LinksPage() {
     return (
         <div>
-            <Navbar>
-                <NavbarItem href="/home" text="Home"/>
-                <NavbarItem href="/about" text="About"/>
-                <NavbarItem href="/links" text="Links"/>
-                <NavbarItem href="/api/v1/doc" text="Developer"/>
-            </Navbar>
+            <NavBar>
+                <NavBarItem href="/home" text="Home"/>
+                <NavBarItem href="/about" text="About"/>
+                <NavBarItem href="/links" text="Links"/>
+                <NavBarItem href="/api/v1/doc" text="Developer"/>
+            </NavBar>
             <center>
                 <h1>Web Links</h1>
                 <ul className="LinksUL">

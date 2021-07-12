@@ -1,6 +1,6 @@
 import "./css/Navbar.css";
 
-export function Navbar(props) {
+export function NavBar(props) {
     return (
         <nav className="navbar">
             <ul className="navbar-ul">{ props.children }</ul>
@@ -8,7 +8,7 @@ export function Navbar(props) {
     );
 }
   
-export function NavbarItem(props) {
+export function NavBarItem(props) {
     return (
         <li className="navbar-item">
             <a href={ props.href } className="navbar-button">{ props.text }</a>

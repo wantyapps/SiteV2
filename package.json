@@ -1,6 +1,6 @@
 {
   "name": "site",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
@@ -25,7 +25,7 @@
     "startall": "react-scripts build && node server.cjs",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
+    "test": "jest --verbose",
     "eject": "react-scripts eject",
     "docker": "docker build -t site . && docker run -dp 80:80 site",
     "release": "release-it"

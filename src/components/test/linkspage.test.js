@@ -1,9 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { LinksPage } from "../Linkspage.js";
+import { LinksPage } from '../Linkspage.js';
 
-test('Test LinksPage', () => {
-    render(<LinksPage/>);
-    const headerElement = screen.getByText('Web Links');
-    expect(headerElement).toBeInTheDocument();
+describe('LinksPage', () => {
+    it('renders the links page correctly', () => {
+        render(<LinksPage/>);
+        const headerElement = screen.getByText('Web Links');
+        expect(headerElement).toBeInTheDocument();
+    });
 });
