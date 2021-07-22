@@ -1,5 +1,4 @@
 .SoftwareUL {
-    position: absolute;
     list-style-type: none;
-    left: 45%;
+    padding: 0;
 }
