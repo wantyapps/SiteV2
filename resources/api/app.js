@@ -1,6 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const joke = require("./joke.js");
+const action = require("./action.js");
 const app = express();
 
 dotenv.config()
@@ -18,9 +18,16 @@ app.get('/api/v1', (req, res) => {
 			console.log("API: Success");
 		};
 		var toSend = {"success": true, "error": false};
-		if ( req.headers.action === "joke" ) {
-			toSend["joke"] = joke.tellJoke();
-		};
+		switch ( req.headers.action ) {
+			case "joke":
+				toSend["joke"] = action.tellJoke();
+				break;
+			case "usage":
+				toSend["usage"] = action.usage();
+				break;
+			default:
+				break;
+		}
 		res.send(toSend);	
 	} else {
 		res.send({"success": false, "error": "Username or password incorrect"});
