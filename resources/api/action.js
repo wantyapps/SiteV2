@@ -5,5 +5,5 @@ exports.tellJoke = () => {
 }
 
 exports.usage = () => {
-	return ""; // TODO: Add usage string
+	return 'Action usage: (options: joke, usage)'; // TODO: Add usage string
 }
