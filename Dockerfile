@@ -9,5 +9,5 @@ COPY ./ ./
 
 EXPOSE 80
 
-RUN ["chmod", "+x", "./docker_commands.sh"]
-ENTRYPOINT ["./docker_commands.sh"]
+RUN ["chmod", "+x", "./scripts/docker_commands.sh"]
+ENTRYPOINT ["./scripts/docker_commands.sh"]
