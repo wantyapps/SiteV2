@@ -1,14 +1,9 @@
-import { NavBar, NavBarItem } from "./Navbar.js";
+import { FullNavBar } from "./Navbar.js";
 
 export function AboutPage() {
     return (
         <div>
-            <NavBar>
-                <NavBarItem href="/home" text="Home"/>
-                <NavBarItem href="/about" text="About"/>
-                <NavBarItem href="/links" text="Links"/>
-                <NavBarItem href="/api/v1/doc" text="Developer"/>
-            </NavBar>
+            <FullNavBar/>
             <center>
                 <h1>About Me</h1>
                 <p>Hello! My name is Uri Arev (aka. Wantyapps), and I love building software.</p>

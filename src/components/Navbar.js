@@ -15,3 +15,14 @@ export function NavBarItem(props) {
         </li>
     );
 }
+
+export function FullNavBar() {
+    return (
+        <NavBar>
+            <NavBarItem href="/home" text="Home"/>
+            <NavBarItem href="/about" text="About"/>
+            <NavBarItem href="/links" text="Links"/>
+            <NavBarItem href="/api/v1/doc" text="Developer"/>
+        </NavBar>
+    );
+}

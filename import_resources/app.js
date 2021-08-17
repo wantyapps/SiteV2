@@ -13,20 +13,20 @@ const limiter = new RateLimit({
 });
 
 app.use(limiter);
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, '../build')));
 
 app.use(api);
 
 app.get('/api/v1/doc', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/api/doc.html'));
+    res.sendFile(path.join(__dirname, '../public/api/doc.html'));
 });
 
 app.get('/api/v1/doc.css', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/api/doc.css'));
+    res.sendFile(path.join(__dirname, '../public/api/doc.css'));
 });
 
 app.get('*', (req, res) => {
-    res.sendFile('index.html', {root: path.join(__dirname, 'build')});
+    res.sendFile('index.html', {root: path.join(__dirname, '../build')});
 });
 
 module.exports = app;
