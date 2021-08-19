@@ -30,3 +30,11 @@ run build && node server.js`)
 * Use the command `serve -s build -l 80` to run the build (with `npm run 
 build`)
 with Serve on port 80
+
+### Subcommands
+
+Here is a short table of subcommands and their meaning
+
+| Command | Summary |
+| :-------: | :-------: |
+| `d`/`debug` | Enter API Debug Mode |
