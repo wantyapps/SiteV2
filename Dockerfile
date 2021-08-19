@@ -3,7 +3,7 @@ FROM node:latest
 EXPOSE 80
 WORKDIR /
 
-COPY ./package.json ./package-lock.json ./docker_commands.sh ./
+# COPY ./package.json ./package-lock.json ./docker_commands.sh ./
 
 COPY ./ ./
 
