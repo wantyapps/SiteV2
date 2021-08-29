@@ -25,6 +25,7 @@
 }
 
 .navbar-button {
+    border: none;
     --navbar-button-size: calc(var(var(--navbar-size)) * 0.5);
     width: var(--navbar-button-size);
     height: var(--navbar-button-size);

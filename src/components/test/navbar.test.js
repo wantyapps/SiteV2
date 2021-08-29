@@ -32,5 +32,12 @@ describe('NavBar', () => {
             const developerButton = screen.getByText('Developer');
             expect(developerButton).toBeInTheDocument();
         });
+        it('renders the toggle theme button correctly', () => {
+            render(
+                <FullNavBar/>
+            );
+            const toggleThemeButton = screen.getByText('Toggle Theme');
+            expect(toggleThemeButton).toBeInTheDocument();
+        });
     });
 });

@@ -1,4 +1,5 @@
 import "./css/Navbar.css";
+import { Dark_Light } from "./Dark_Light.js";
 
 export function NavBar(props) {
     return (
@@ -23,6 +24,7 @@ export function FullNavBar() {
             <NavBarItem href="/about" text="About"/>
             <NavBarItem href="/links" text="Links"/>
             <NavBarItem href="/api/v1/doc" text="Developer"/>
+            <Dark_Light/>
         </NavBar>
     );
 }
