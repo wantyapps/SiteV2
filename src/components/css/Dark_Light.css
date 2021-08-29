@@ -1,1 +1,19 @@
-/* TODO: Add CSS for this component */
+/* .Dark_Light {
+    border: none;
+    --navbar-button-size: calc(var(var(--navbar-size)) * 0.5);
+    width: var(--navbar-button-size);
+    height: var(--navbar-button-size);
+    background-color: #FFFFFF;
+    border-radius: 10%;
+    padding: 10px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms;
+    color: #19354D;
+}
+
+.Dark_Light:hover {
+    filter: brightness(1.5);
+} */

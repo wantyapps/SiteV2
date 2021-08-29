@@ -24,6 +24,15 @@ code {
   --footer-bg: #045195;
 }
 
+:root[data-theme='dark'] {
+  --bg: #12212d;
+  --text-color: #E6E6E6;
+  --nav-bg: #01294c;
+  --navbar-size: 50px;
+  --border: 1px solid #181b1e;
+  --footer-bg: var(--nav-bg);
+}
+
 a {
   color: var(--text-color);
   text-decoration: none;
