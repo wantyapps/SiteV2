@@ -26,7 +26,8 @@
 
 .navbar-button {
     border: none;
-    --navbar-button-size: calc(var(var(--navbar-size)) * 0.5);
+    cursor: pointer;
+    user-select: none;
     width: var(--navbar-button-size);
     height: var(--navbar-button-size);
     background-color: #FFFFFF;
@@ -36,10 +37,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: filter 300ms;
+    transition: 300ms;
     color: #19354D;
 }
 
 .navbar-button:hover {
-    filter: brightness(1.5);
+    transition: 300ms;
+    color: #3876ac;
 }

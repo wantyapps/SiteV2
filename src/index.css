@@ -37,6 +37,12 @@ a {
   color: var(--text-color);
   text-decoration: none;
   font-size: 15px;
+  transition: 500ms;
+}
+
+a:hover {
+  transition: 500ms;
+  color: #4571a3;
 }
 
 .LinksUL {

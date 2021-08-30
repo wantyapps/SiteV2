@@ -12,7 +12,7 @@ export function NavBar(props) {
 export function NavBarItem(props) {
     return (
         <li className="navbar-item">
-            <a href={ props.href } className="navbar-button">{ props.text }</a>
+            <a href={ props.href } onClick={props.onClick} className="navbar-button">{ props.text }</a>
         </li>
     );
 }
