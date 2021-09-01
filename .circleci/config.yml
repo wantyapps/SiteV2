@@ -2,10 +2,10 @@
 version: 2.1
 
 orbs:
-  node: circleci/node@4.1
+  node: circleci/node@16.8
 
 workflows:
-  sample:
+  Node.JS:
     jobs:
       - node/test:
           version: '15.1'
