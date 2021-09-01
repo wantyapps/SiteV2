@@ -2,7 +2,7 @@
 version: 2.1
 
 orbs:
-  node: circleci/node@16.8
+  node: circleci/node@4.7.0
 
 workflows:
   Node.JS:
