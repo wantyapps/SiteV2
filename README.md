@@ -13,6 +13,19 @@ Mission:
 
 * Build the application with `npm run build`
 
+### Configuration
+
+* create a `.env` file
+
+* Put:
+
+```env
+WANTYAPIUSERNAME=<username>
+WANTYAPIPASSWORD=<password>
+```
+
+in the `.env` file, replacing `<username>` with the admin user name for the API, and `<password>` with the SHA256 encrypted version of the password for the admin user.
+
 ### Running
 
 #### Node

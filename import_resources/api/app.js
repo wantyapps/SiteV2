@@ -1,6 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const action = require("./action.js");
+const hash = require('hash.js');
 const app = express();
 
 dotenv.config()
@@ -13,7 +14,7 @@ if ( process.argv[2] === "d" || process.argv[2] === "debug" ) {
 };
 
 app.get('/api/v1', (req, res) => {
-	if ( req.headers.username === process.env.WANTYAPIUSERNAME && req.headers.password == process.env.WANTYAPIPASSWORD) {
+	if ( req.headers.username === process.env.WANTYAPIUSERNAME && hash.sha256().update(req.headers.password).digest('hex') == process.env.WANTYAPIPASSWORD) {
 		if ( ProcessDebug === true ) {
 			console.log("API: Success");
 		};
@@ -28,7 +29,7 @@ app.get('/api/v1', (req, res) => {
 			default:
 				break;
 		}
-		res.send(toSend);	
+		res.send(toSend);
 	} else {
 		res.send({"success": false, "error": "Username or password incorrect"});
 		if ( ProcessDebug === true ) {
