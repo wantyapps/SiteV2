@@ -25,7 +25,7 @@
     "startall": "react-scripts build && node server.cjs",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --verbose",
+    "test": "jest",
     "eject": "react-scripts eject",
     "docker": "docker build -t site . && docker run -dp 80:80 site",
     "release": "release-it"
@@ -60,6 +60,8 @@
     "release-it": "^14.10.0"
   },
   "jest": {
+    "verbose": true,
+    "testEnvironment": "jsdom",
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/config/CSSStub.js"
