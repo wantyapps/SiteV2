@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 
 let theme = localStorage.getItem('data-theme');
-document.documentElement.setAttribute("data-theme", theme);
+document.documentElement.setAttribute("data-theme", theme || "light");
 
 ReactDOM.render(
   <React.StrictMode>
