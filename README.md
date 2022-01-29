@@ -51,3 +51,7 @@ Here is a short table of subcommands and their meaning
 | Command | Summary |
 | :-------: | :-------: |
 | `d`/`debug` | Enter API Debug Mode |
+
+### API
+
+There is a documentation file (`public/api/doc.html`) that can be viewed with a button on the NavBar.
